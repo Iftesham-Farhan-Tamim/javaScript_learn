@@ -12,14 +12,19 @@ const user = {
 // user.username = "Sam";
 // user.welcomeMessage()  // username: 'Sam',
 
-// Print:
-//Tamim, welcome to website
+// output:
+// Tamim, welcome to website
 // {
-//     username: 'Tamim',
-//     price: 999,
-//     welcomeMessage: [Function: welcomeMessage]
-//   }
-
+//   username: 'Tamim',
+//   price: 999,
+//   welcomeMessage: [Function: welcomeMessage]
+// }
+// Sam, welcome to website
+// {
+//   username: 'Sam',
+//   price: 999,
+//   welcomeMessage: [Function: welcomeMessage]
+// }
 
 
 const user1 = {
@@ -27,21 +32,23 @@ const user1 = {
     price: "199",
 
     alertMessage: function () {
-        console.log(`{this.username} and price is ${this.price}`);
+        console.log(`${this.username} and price is ${this.price}`);
         console.log(this);
     }
 }
 
 // user1.alertMessage();
-// console.log(this);  // {}
 
-// Print:
-// {this.username} and price is 199
+// output:
+
+// Tamim2 and price is 199
 // {
 //   username: 'Tamim2',
 //   price: '199',
 //   alertMessage: [Function: alertMessage]
 // }
+
+// console.log(this);  // {}
 
 
 
@@ -73,24 +80,30 @@ const addThree = (num1, num2) => (num1 + num2)
 
 
 const four = (num1, num2) => ({ username: "Tamim" });
-// console.log(four()); // { username: 'Tamim' }
+console.log(four()); // { username: 'Tamim' }
 
 
 const five = [2, 3, 4, 5]
 
-// five.forEach(function (element) {
-//     console.log(element);  // [2, 3, 4, 5]
-// });
+five.forEach(function (element) {
+    // console.log(element);  
+});
 
+// output:
+
+// 2
+// 3
+// 4
+// 5
 
 
 five.forEach(element => {
-    console.log(element);  // [2, 3, 4, 5]
+    // console.log(element);  // [2, 3, 4, 5]
 });
 
+// output:
 
-
-
-
-
-
+// 2
+// 3
+// 4
+// 5

@@ -26,7 +26,7 @@ const JsUser = {
 // console.log(typeof [mySym])
 
 JsUser.email = "tamim@bing.com";
-// Object.freeze(JsUser)
+Object.freeze(JsUser)
 JsUser.email = "tamim@msft.com";
 
 // console.log(JsUser["email"]);  // tamim@bing.com ( when use Object.freeze(JsUser) )
@@ -44,27 +44,12 @@ JsUser.greeting_0 = function(){
 }
 
 // console.log(JsUser.greeting());  // Hello js user, undefined, (next line [undefined])
-console.log(JsUser.greetingTwo());  // Hello js user, Tamim, (next line [undefined])
+// console.log(JsUser.greetingTwo());  // Hello js user, Tamim, (next line [undefined])
 // console.log(JsUser.greeting_0()); // lol, (next line [undefined])
 
 
-// Hello = function(){
-//     console.log("Nice");
-// }
+Hello = function(){
+    console.log("Nice");
+}
 // console.log(Hello);  // [Function: Hello]
 // console.log(Hello());  // Nice
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

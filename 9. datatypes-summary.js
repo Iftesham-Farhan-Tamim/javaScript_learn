@@ -12,9 +12,14 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// Every Symbol instance is unique (Symbol values are always unique), even if it has the same description
 
-// const bigNumber = 3456543576654356754n
+// console.log(id == anotherId);  // false (Loose equality respects Symbol uniqueness; no type coercion is applied)
+// console.log(id === anotherId);  // false (Strict equality checks identity; id and anotherId are different)
+
+const bigNumber = 3456543576654356754n
+// console.log(bigNumber);  // 3456543576654356754n
+
 
 
 
@@ -22,9 +27,9 @@ console.log(id === anotherId);
 
 // Array, Objects, Functions
 
-const heros = ["shaktiman", "naagraj", "doga"];
+const heros = ["abcd", "efgh", "ijkl"];
 let myObj = {
-    name: "hitesh",
+    name: "tamim",
     age: 22,
 }
 
@@ -32,6 +37,7 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);  // symbol
+myFunction()  // Hello world
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3

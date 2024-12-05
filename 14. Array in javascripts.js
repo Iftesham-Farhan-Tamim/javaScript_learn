@@ -1,9 +1,9 @@
 // array
 
-const myArr = [0, 1, 2, 3, 4, 5]
-const myHeroes = ["Hello", "World", "Tamim"]
+// const myArr = [0, 1, 2, 3, 4, 5]
+// const myHeroes = ["Hello", "World", "Tamim"]
 
-const myArr2 = new Array(1, 2, 3, 4)
+// const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
 // Array methods
@@ -35,7 +35,7 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 // console.log("A", myArr);
 
-const myn1 = myArr.slice(1, 3); // (from index 1 to 2)
+// const myn1 = myArr.slice(1, 3); // (from index 1 to 2)
 // console.log(myn1);  // [ 1, 2 ]
 // console.log("B", myn1);  // B [ 1, 2 ]
 
@@ -43,32 +43,6 @@ const myn1 = myArr.slice(1, 3); // (from index 1 to 2)
 // // const myArr = [0, 1, 2, 3, 4, 5]
 
 
-const myn2 = myArr.splice(1, 3); // (from index 1 to 3)
-console.log("C", myn2);  // C [ 1, 2, 3 ]
-console.log(myn2);  // [ 1, 2, 3 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const myn2 = myArr.splice(1, 3); // (from index 1 to 3)
+// console.log("C", myn2);  // C [ 1, 2, 3 ]
+// console.log(myn2);  // [ 1, 2, 3 ]

@@ -44,7 +44,7 @@ const gamename2 = "tamim_tc_com"; // Simpler string creation
 // +++++++++++  slice=(not including) & substring=(including)  +++++++++++
 
 
-const str = "helloworld";
+// const str = "helloworld";
 
 // console.log(str.slice(2, 5));  // llo (extracts characters from index 2 to 4 (not including 4))
 // console.log(str.slice(-3));   // rld (extracts last 3 characters)
@@ -52,33 +52,3 @@ const str = "helloworld";
 // console.log(str.substring(-1, 2));  // he (treats -1 as 0, extracts characters from 0 to 1)
 // console.log(str.slice(5, 2));  // "" (empty string, start index greater than end index)
 // console.log(str.substring(5, 2));  // llo (extracts "h" from index 5 to 1, considering 5 as 0)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

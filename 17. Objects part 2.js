@@ -80,22 +80,9 @@ const {coursename} = course
 // console.log(coursename);
 
 const {coursename :hello} = course
-console.log(hello);
+// console.log(hello);
 
 
 // Links:
 // 1. https://randomuser.me/    --> Random user
 // 2. https://jsonformatter.org/    --> JSON formatter
-
-
-
-
-
-
-
-
-
-
-
-
-

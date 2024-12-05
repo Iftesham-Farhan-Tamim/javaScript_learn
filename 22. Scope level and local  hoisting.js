@@ -1,9 +1,7 @@
 
-
-
 function one() {
     const username = "Tamim";
-    // console.log(username);  // Tamim
+    console.log(username);  // Tamim
 
     function two() {
         const website = "tube";
@@ -12,7 +10,11 @@ function one() {
     two();  // necessary for run one() function
 }
 
-// one();  // Tamim
+// one();  
+
+// output:
+// Tamim
+// Tamim
 
 if (!false) {
     const username = "Tamim";
@@ -23,7 +25,7 @@ if (!false) {
     }
 }
 
-// console.log(input(5));
+// console.log(input(5));  // hoisting allows you to use function declarations before they are defined in the code.
 
 function input(num) {
     return num + 1;
@@ -32,18 +34,22 @@ function input(num) {
 
 const num = 6;
 function name1() {
-    // console.log("Hello");
+    console.log("Hello");
     const variable = num;
     console.log(variable);
 }
 
-// name1();  // 6
+// name1();  
+
+// output:
+// Hello
+// 6
 
 
 
 // valid(5);  // 6
 function valid(num) {
-    // console.log(num +1);
+    console.log(num +1);
     return num + 1;
 }
 
@@ -51,25 +57,4 @@ function valid(num) {
 const new1 = function (num) {
     return num +2;
 }
-console.log(new1(5));  // 7
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(new1(5));  // 7

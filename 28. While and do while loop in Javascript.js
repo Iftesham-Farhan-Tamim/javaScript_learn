@@ -1,21 +1,19 @@
 
-// let index = 0;
-// while (index <= 10) {
+let index = 0;
+while (index <= 10) {
     // console.log(`Value of index is ${index}`);
-//     index = index+2;
-//     index++;
-// }
+    index = index+2;
+    index++;
+}
 
-// Print: (// index = index+2;) -->
+// output: (// index = index+2;) -->
 
 // Value of index is 0
-// Value of index is 2
-// Value of index is 4
+// Value of index is 3
 // Value of index is 6
-// Value of index is 8
-// Value of index is 10
+// Value of index is 9
 
-// Print: (index++;) -->
+// output: (index++;) -->
 
 // Value of index is 0
 // Value of index is 1
@@ -38,7 +36,7 @@ while (arr < myArray.length) {
     arr = arr + 1
 }
 
-// Print: 
+// output: 
 // Value is flash
 // Value is batman
 // Value is superman
@@ -49,18 +47,11 @@ while (arr < myArray.length) {
 let score = 11;
 
 do {
-    console.log(`Score is ${score}`);
+    // console.log(`Score is ${score}`);
     score++;
 } while (score <= 10);
 
-// Print:
+// output:
 // Score is 11
 
 // Do while loop print the function first then check the condition
-
-
-
-
-
-
-

@@ -9,12 +9,39 @@ for (const num of arr) {
     // console.log(num);
 };
 
+// output:
+// 1
+// 2
+// 3
+// 4
+// 5
+
+for (const num of arr) {
+    // process.stdout.write((num) + " ");
+};
+
+// output:
+// 1 2 3 4 5
+// ............................................................................................
 const greetings = "Hello World!";
 for (const greet of greetings) {
     // console.log(`Each char is ${greet}`);
 }
 
-
+// output:
+// Each char is H
+// Each char is e
+// Each char is l
+// Each char is l
+// Each char is o
+// Each char is  
+// Each char is W
+// Each char is o
+// Each char is r
+// Each char is l
+// Each char is d
+// Each char is !
+// ............................................................................................
 // Map
 
 // const map = new Map();
@@ -26,8 +53,7 @@ for (const greet of greetings) {
 
 // console.log(map); //  countries, IN 2 times.
 
-// Print:
-
+// output:
 // Map(4) {
 //     'IN' => 'France',
 //     'USA' => 'United States of America',
@@ -35,14 +61,18 @@ for (const greet of greetings) {
 //     'BD' => 'Bangladesh'
 //   }
 
+
 // for (const [key, value] of map) {
-//     // console.log(key, ":-", value);
-//     // console.log(`${key} :- ${value}`);
+//     console.log(key, ":-", value);
+//     console.log(`${key} :- ${value}`);
 // }
 
-// Print:
+// output:
+// IN :- France
 // IN :- France
 // USA :- United States of America
+// USA :- United States of America
+// Fr :- France
 // Fr :- France
 
 
@@ -55,7 +85,7 @@ for (const greet of greetings) {
 // console.log(keys, ":-", value);
 // }
 
-// Print:
+// output:
 // TypeError: myObject is not iterable
 
 
@@ -109,22 +139,39 @@ for (const key in programming) {
     // console.log(programming[key]);
 }
 
+// output:
+// js
+// rb
+// py
+// java
+// cpp
 
-
-// const map = new Map()
-// map.set("IN", "India")
-// map.set("USA", "United States of America")
-// map.set("Fr", "France")
-// map.set("BD", "Bangladesh")
+const map = new Map()
+map.set("IN", "India")
+map.set("USA", "United States of America")
+map.set("Fr", "France")
+map.set("BD", "Bangladesh")
 
 
 // console.log(map);
 
-// for (const [key, value] of map) {
-//     console.log(key, ":-", value);
+// output:
+// Map(4) {
+//     'IN' => 'India',
+//     'USA' => 'United States of America',
+//     'Fr' => 'France',
+//     'BD' => 'Bangladesh'
 // }
 
+for (const [key, value] of map) {
+    // console.log(key, ":-", value);
+}
 
+// output:
+// IN :- India
+// USA :- United States of America
+// Fr :- France
+// BD :- Bangladesh
 
 // +++++++++++++++for Each+++++++++++++++
 
@@ -157,10 +204,10 @@ coding.forEach((item) => {
 
 
 function printMe(item) {
-    console.log(item);
+    // console.log(item);
 }
 // coding.forEach(printMe)
-// Print:
+// output:
 // js
 // ruby
 // java
@@ -169,10 +216,10 @@ function printMe(item) {
 
 
 
-// coding.forEach((item, index, arr) => {
-//     // console.log(item, index, arr);
-// });
-// // Print:
+coding.forEach((item, index, arr) => {
+    // console.log(item, index, arr);
+});
+// // output:
 // // js 0 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // // ruby 1 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
 // // java 2 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
@@ -206,17 +253,27 @@ myCoding.forEach(element => {
     // console.log(element.languageFileName);
 });
 
-
+// output:
+// js
+// py
+// java
 
 const world = [1, 2, 3, 4, 5];
 
-// const values = world.forEach(element => {
-//     console.log(element);
-//     return element;
-// });
+const values = world.forEach(element => {
+    // console.log(element);
+    return element;
+});
+
+// output:
+// 1
+// 2
+// 3
+// 4
+// 5
+
 
 // const values = world.forEach(element => element);
-
 // console.log(values);  // undefined
 
 
@@ -225,18 +282,40 @@ const groceries = ["apples", "bananas", "milk", "bread", "cheese"];
 
 // groceries.forEach(element => console.log(element));
 
+// output:
+// apples
+// bananas
+// milk
+// bread
+// cheese
+
 // groceries.forEach(element => console.log(element));
+
+// output:
+// apples
+// bananas
+// milk
+// bread
+// cheese
 
 const new1 = groceries.filter( (val) => {
     // console.log(val);
     return val;
 })
-console.log(new1);
 
+// output:
+// apples
+// bananas
+// milk
+// bread
+// cheese
 
+// console.log(groceries);
 
+// output:
+// [ 'apples', 'bananas', 'milk', 'bread', 'cheese' ]
 
+// console.log(new1);
 
-
-
-
+// output:
+// [ 'apples', 'bananas', 'milk', 'bread', 'cheese' ]

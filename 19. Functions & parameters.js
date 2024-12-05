@@ -1,29 +1,49 @@
 
 function sayMyName() {
-    console.log("H");
-    console.log("I");
     console.log("T");
-    console.log("E");
-    console.log("S");
-    console.log("H");
+    console.log("A");
+    console.log("M");
+    console.log("I");
+    console.log("M");
 }
 
 // console.log(sayMyName());  // [H I T E S H], undefined
+
+// OUTPUT:
+// T
+// A
+// M
+// I
+// M
+// undefined
+
+
 // sayMyName();  // // [H I T E S H]
 
-// function addTwoNumbers(number1, number2){
-//     console.log(number1 + number2);
-// }
+// OUTPUT:
+// T
+// A
+// M
+// I
+// M
+
+function addTwoNumbers(number1, number2){
+    console.log(number1 + number2);
+}
 // addTwoNumbers(5, 6); // 11
 
 
 function addTwoNumbers2(num1, num2) {
     let result = num1 + num2;
-    // console.log(result);
+    console.log(result);
     return result;
 }
 // addTwoNumbers2(10, 15);  // 25
-// console.log(addTwoNumbers2(10, 10));  // 20
+// console.log(addTwoNumbers2(10, 10));  
+
+// output:
+// 20 
+// 20
 
 
 
@@ -77,16 +97,11 @@ function returnSecondValue(getArray){
 function car(val1, val2, ...num) {
     return num;
 }
-console.log(car[100, 200, 300, 400, 500]);
+
+// console.log(car[100, 200, 300, 400, 500]);  // undefined
+
+// console.log(returnSecondValue(myNewArray));  // 100
+// console.log(returnSecondValue([200, 400, 500, 1000]));  // 500
 
 
-
-
-
-
-
-
-
-
-
-
+// << Js is 0 based index >>

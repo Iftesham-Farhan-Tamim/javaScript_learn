@@ -1,13 +1,29 @@
 const coding = ["js", "ruby", "java", "python", "cpp"];
 
 
-// coding.forEach(function (val) {
-//     console.log(val);
-// });
+coding.forEach(function (val) {
+    // console.log(val);
+});
 
-// coding.forEach(element => {
-//     console.log(element);
-// });
+// output:
+// js
+// ruby
+// java
+// python
+// cpp
+
+
+coding.forEach(element => {
+    // console.log(element);
+});
+
+// output:
+// output:
+// js
+// ruby
+// java
+// python
+// cpp
 
 
 // +++++++++++++++filter++++++++++
@@ -18,20 +34,40 @@ const values = coding.forEach((element) => {
     return element;
 });
 
+// output:
+// js
+// ruby
+// java
+// python
+// cpp
+
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// const newNums = myNums.filter((num) => {
-//     return num > 4;
-// })
-
-// for (let i = 0; i < myNums.length; i++) {
-//     if (i > 4) {
-//         console.log(myNums[i]);
-//     }
-// }
+const newNums = myNums.filter((num) => {
+    return num > 4;
+})
 
 // console.log(newNums);  // [ 5, 6, 7, 8, 9, 10 ]
+
+// output:
+// [ 5, 6, 7, 8, 9, 10 ]
+
+
+for (let i = 0; i < myNums.length; i++) {
+    if (i > 4) {
+        // console.log(myNums[i]);
+    }
+}
+
+// output:
+// 6
+// 7
+// 8
+// 9
+// 10
+
+
 
 
 const books = [
@@ -48,32 +84,10 @@ const books = [
 
 
 let userBooks = books.filter( (bk) => bk.genre === "Fiction")
-console.log(userBooks);
+// console.log(userBooks);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// output:
+// [
+//   { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+//   { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 }
+// ]
